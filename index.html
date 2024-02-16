@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+  <title>Form</title>
+</head>
+<body>
+  
+<h1> Form example</h1>
+<div class="form-container">
+	<form>
+		<div class="page active-page" data-number="1">
+			<div class="page-container">
+				<h3>Basic info</h3>
+				<label> Name </label>
+				<input type="text">
+				<br />
+				<label> Surname </label>
+				<input type="text">
+				<br />
+				<label> Gender </label>
+				<div class="radio-box">
+					<input type="radio" id="male" name="gender" value="male" />
+					<label class="radio-label" for="male">Male</label>
+					<br />
+					<input type="radio" id="female" name="gender" value="female" />
+					<label class="radio-label" for="female">Female</label>
+					<br />
+					<input type="radio" id="other" name="gender" value="other" />
+					<label class="radio-label" for="other">Other</label>
+				</div>
+			</div>
+		</div>
+
+		<div class="page" data-number="2">
+			<div class="page-container">
+				<h3>Contact info</h3>
+				<label> Phone number</label>
+				<input type="text">
+				<br />
+				<label> e-mail</label>
+				<input type="email">
+			</div>
+
+		</div>
+
+		<div class="page" data-number="3">
+			<div class="page-container">
+				<h3>Address info 1/2</h3>
+				<label> Country</label>
+				<input type="text">
+				<br />
+				<label> City</label>
+				<input type="text">
+				<br />
+				<label> Post code</label>
+				<input type="text">
+			</div>
+		</div>
+
+		<div class="page" data-number="4">
+			<div class="page-container">
+				<h3>Address info 2/2</h3>
+				<label> Street</label>
+				<input type="text">
+				<br />
+				<label> Building number</label>
+				<input type="text">
+			</div>
+		</div>
+	</form>
+</div>
+
+<div class="progress-box">
+	<div class="progress-bar"></div>
+	<div class="step active-step">1</div>
+	<div class="step">2</div>
+	<div class="step">3</div>
+	<div class="step">4</div>
+</div>
+
+<div class="buttons-box">
+	<button class="btn btn-prev" disabled>&lt;</button>
+	<button class="btn btn-next">&gt;</button>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

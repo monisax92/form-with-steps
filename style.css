@@ -1,0 +1,165 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	height: 100vh;
+	background: linear-gradient(150deg, grey, lightcoral);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+h1 {
+	color: whitesmoke;
+	margin-bottom: 1rem;
+	font-family: 'Dancing Script', cursive;
+}
+
+h3 {
+	width: 100%;
+	font-weight: 400;
+	margin-bottom: 2rem;
+	text-transform: uppercase;
+	color: rgb(50, 50, 50);
+	letter-spacing: 1px;
+	word-spacing: 3px;
+	position: absolute;
+	top: 0.5rem;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.form-container {
+	background-color: rgba(220, 220, 220, 0.1);
+	padding: 1.5rem 1.5rem;
+	border-radius: 10px;
+}
+
+form {
+	background-color: rgba(220, 220, 220, 0.4);
+	padding: 0.5rem 0;
+	border-radius: 10px;
+	text-align: center;
+	height: 300px;
+	width: 300px;
+	overflow: hidden;
+}
+
+label {
+	font-weight: 200;
+	display: block;
+	margin-bottom: 0.5rem;
+	text-align: left;
+	padding-left: 0.5rem;
+}
+
+.radio-label {
+	display: inline-block;
+	padding: 0;
+	margin-bottom: 0;
+}
+
+.radio-box {
+	text-align: left;
+	padding-left: 2rem;
+}
+
+.page {
+	width: 100%;
+	height: 100%;
+	display: none;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	padding-top: 2rem;
+}
+
+input {
+	margin-bottom: 1rem;
+	background-color: rgb(220, 220, 220);
+	padding: 0.5em;
+	border: none;
+	border-radius: 5px;
+}
+
+input[type='radio'] {
+	margin-bottom: 0;
+	padding: 0;
+}
+
+.progress-box {
+	margin-top: 3rem;
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+	width: 300px;
+}
+
+.progress-box::before,
+.progress-bar {
+	height: 4px;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	z-index: -1;
+}
+
+.progress-box::before {
+	content: '';
+	width: 100%;
+	background-color: rgb(170, 170, 170);
+}
+
+.progress-bar {
+	width: 0%;
+	background-color: indianred;
+	transition: width 0.3s;
+}
+
+.step {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 40px;
+	width: 40px;
+	/* 	border: rgb(220, 220, 220) solid 1px; */
+	background-color: rgb(190, 190, 190);
+	border-radius: 50%;
+	color: black;
+	transition: all 0.3s;
+}
+
+.buttons-box {
+	margin-top: 2rem;
+}
+
+.active-page {
+	display: flex;
+}
+
+.active-step {
+	background-color: indianred;
+	color: white;
+}
+
+.btn {
+	padding: 0.2em 1em;
+	font-size: 18px;
+	cursor: pointer;
+	background-color: indianred;
+	color: white;
+	border: none;
+	border-radius: 5px;
+}
+
+.btn[disabled] {
+	cursor: not-allowed;
+	background-color: lightgrey;
+	color: grey;
+}
